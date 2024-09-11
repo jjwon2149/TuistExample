@@ -78,3 +78,8 @@ class ViewController: UIViewController {
 ```bash
 tuist generate
 ```
+
+## 의존 그래프 그리기
+```bash
+tuist graph
+```
