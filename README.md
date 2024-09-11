@@ -9,3 +9,5 @@ brew install --formula tuist@x.y.z
 ```
 
 tuist init --platform ios
+
+tuist generate
