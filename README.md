@@ -1,17 +1,29 @@
-Alternative: Homebrew
-If version pinning across environments is not a concern for you, you can install Tuist using Homebrew and our formulas:
+# Tuist Practice Project (UIKit)
 
-```ㅣ
-bash
+This repository is for practicing [Tuist](https://tuist.io/) with a focus on generating a basic iOS project using UIKit. Follow the steps below to install Tuist and set up the project.
+
+## Installation
+
+If version pinning across environments is not a concern, you can install Tuist using Homebrew and our formulas:
+
+```bash
 brew tap tuist/tuist
 brew install --formula tuist
 brew install --formula tuist@x.y.z
 ```
 
+
+
+## Getting Started
+새로만든 디렉토리로 이동하여
+```bash
 tuist init --platform ios
+```
 
-tuist generate  (기본은 SwiftUI로 generate 해줌.)
-
+generate, xcode 실행 (기본은 SwiftUI로 generate 해줌.)
+```bash
+tuist generate  
+```
 
 ## UIKit으로 실행하는법
 Source 디렉토리에 기본으로 생성되는 파일 삭제. (ContentView.swift, "Root 디렉토리 이름"App.swift)
@@ -63,4 +75,6 @@ class ViewController: UIViewController {
 ```
 
 이후 
+```bash
 tuist generate
+```
